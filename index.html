@@ -375,6 +375,10 @@
 	    .youtube-frame { width: 100%; max-width: 900px; margin: 0 auto; aspect-ratio: 16 / 9; overflow: hidden; background: #111; border: 1px solid #ddd; }
 	    .youtube-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
 	    .youtube-action { margin-top: 24px; text-align: center; }
+	    .hero-art-frame { width: 100%; height: 450px; overflow: hidden; border: 0; background: #111; }
+	    .hero-art-frame::before, .hero-art-frame::after { display: none; }
+	    .hero-art-frame img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+	    @media (max-width: 640px) { .hero-art-frame { width: 100%; height: 350px; } }
 	
 	  </style>
 	</head>
@@ -407,16 +411,12 @@
           </div>
           <div class="trust-line"><span class="trust-dot"></span><span><strong>100K+ Instagram community</strong> · Your style, our craft.</span></div>
         </div>
-        <div class="hero-visual">
-          <div class="hero-art" aria-label="John Saloon typographic brand artwork">
-            <div class="hero-art-frame">
-              <span class="hero-art-top">KAKINADA · GROOMING STUDIO</span>
-              <span class="hero-art-letter">J</span>
-              <span class="hero-art-side">CUT · STYLE · GROOM</span>
-              <span class="hero-art-bottom">THE JOHN EXPERIENCE <i>—</i> 01 / 06</span>
-            </div>
-            <div class="hero-art-stamp"><span>JS</span><small>GROOMING<br>STUDIO</small></div>
-          </div>
+	        <div class="hero-visual">
+	          <div class="hero-art" aria-label="Professional barber working with a client in a modern salon">
+	            <div class="hero-art-frame">
+	              <img src="john-saloon-hero.png" alt="Barber carefully styling a client's hair in a modern grooming studio" loading="eager">
+	            </div>
+	          </div>
           <div class="photo-note"><strong>Made for your best look.</strong><span>Precision · Detail · Confidence</span></div>
         </div>
       </div>
